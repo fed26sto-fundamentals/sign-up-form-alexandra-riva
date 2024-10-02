@@ -14,7 +14,7 @@
     <div class="left">
         <div class="left-container">
             <div class="hero-container">
-                <img src="./Images/logo.png" alt="image of odin logo" height="130px"> 
+                <img src="./Images/logo.png" alt="image of odin logo"> 
                 <h1 class="hero-text">ODIN</h1>
             </div>
             <div class="img-credit"> 
@@ -22,7 +22,7 @@
             </div>               
         </div>
     </div>
-    
+
     
 <div class="right">
     <div class="right-container">
@@ -39,40 +39,43 @@
             <ul>
                 <li>
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
                 </li>
                 <li>
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" required>
                 </li>
                 <li>
                     <label for="user-email">EMAIL</label>
-                    <input type="email" id="user-email" name="user-email">
+                    <input type="email" id="user-email" name="user-email" required autocomplete="off">
                 </li>
                 <li>
                     <label for="user-tel">PHONE NUMBER</label>
-                    <input type="tel" id="user-tel" name="user-tel">
+                    <input type="tel" id="user-tel" name="user-tel" required pattern="[0-9]{10}">
                 </li>
                 <li>
                     <label for="user-password">USER PASSWORD</label>
-                    <input type="password" id="user-password" name="user-password">
+                    <input type="password" id="user-password" name="user-password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.">
                 </li>
                 <li>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password">
+                    <input type="password" id="confirm-password" name="confirm-password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.">
                 </li>
             </ul>
-
+           
         </form>
-
+ 
+ 
     </div>
-
-        <div class="cta-container">
-            <button>Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
+ 
+ 
+    <div class="cta-container">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
     </div>
-</div>
-
+   
+    </div>
+ </div>
+ 
 </body>
 </html>
