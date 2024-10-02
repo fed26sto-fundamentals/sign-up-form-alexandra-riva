@@ -49,12 +49,18 @@ height: 80%;
     font-family: skranji, sans-serif;
 }
 
-.img-credit{
-    position: absolute;
-    bottom: 0;
-    padding: 20px 0;
-    opacity: 0.8%;
+.img-credit {
+    position: absolute; 
+    bottom: 20px; 
+    width: 100%;
+    text-align: center; 
+    opacity: 0.8; 
 }
+
+.img-credit a{
+    color: white;
+}
+
 
 ul {
     list-style-type: none;
@@ -63,6 +69,7 @@ ul {
 .right{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 55%;
     padding: 40px;
     background-color: rgba(233, 233, 233, 0.30);
@@ -76,33 +83,88 @@ ul {
     height: 60%;
 }
 
-.header-text{
+.header-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 16px;
-    height: 500px;
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    width: 70%;
-    margin: 40px;
+    justify-content: center;  
+    align-items: center;      
+    gap: 16px;                
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 40px;          
+    height: 100%;            
 }
+
 
 .separate-text {
     margin-top: 20px;
-}
+    text-align: left; 
+    width: 100%;   
+} 
+
 
 .form-container {
-    width: 100vw; 
-    height: 350px;
+    width: 100vw;
     background-color: white;
     padding: 40px;
     margin-left: -40px; 
     margin-right: -40px;
-    box-shadow: 0px 5px 5px 0px #e5e7eb;
+    box-shadow: 2px 5px 10px #e5e7eb;
+}
+
+.form-container p{
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+form{
+    display: inline-block; 
+    width: 45%;
+}
+
+li{
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    color: white; 
+    background-color: #596d48;
+    border-radius: 8px;
+    border-style: none;
+    padding: 12px 20px; 
+    width: 180px;      
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
 
 .cta-container{
+    margin: 40px;
    
+}
+
+.cta-container a{
+    color: #596d48;
+    font-weight: 600;
+    text-decoration: none;
+
 }
