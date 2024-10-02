@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="left-container">
-    <div class="hero-container"></div>
-    <img src="hero-img" alt="">
-    <h1 class="hero-text"></h1>
-</div>
-<div class="img-credit"> 
-    <p>Image credit</p>
-</div>
-
-<div class="right-container"></div>
-    <div> class="header-text"</div>
-
-    <div> class="form-container"</div>
+    <div class="left">
+        <div class="left-container">
+            <div class="hero-container">
+                <img src="./Images/logo.png" alt="image of odin logo" height="130px"> 
+                <h1 class="hero-text">ODIN</h1>
+        </div>
+            <div class="img-credit"> 
+                <p>Image credit</p>
+            </div>
+        </div>
+    </div>
+    
+<div class="right">
+    <div class="right-container">
+        <div class="header-text">
+            <strong>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            </strong>
+            <p class="separate-text"><strong>You <em>know</em> you want to.</strong></p>
+        </div>
+    </div>          
+    <div class="form-container">
         <p>Let's do this!</p>
         <form action="#" method="POST">
-
             <ul>
                 <li>
                     <label for="first-name">FIRST NAME</label>
@@ -34,11 +45,11 @@
                     <input type="text" id="last-name" name="last-name">
                 </li>
                 <li>
-                    <label for="user-name">EMAIL</label>
+                    <label for="user-email">EMAIL</label>
                     <input type="email" id="user-email" name="user-email">
                 </li>
                 <li>
-                    <label for="user-tell">PHONE NUMBER</label>
+                    <label for="user-tel">PHONE NUMBER</label>
                     <input type="tel" id="user-tel" name="user-tel">
                 </li>
                 <li>
@@ -53,13 +64,14 @@
 
         </form>
 
-    <div class="cta-container">
-        <button>Create Account</button>
-        <p>This is where we will log in/already have an account</p>
     </div>
 
-
-
+        <div class="cta-container">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </div>
+
 </body>
 </html>
